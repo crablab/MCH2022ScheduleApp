@@ -10,16 +10,16 @@
     <string name="menu_item_title_delete_favorite">Slet</string>
     <string name="menu_item_title_set_alarm">Indstil alarm</string>
     <string name="menu_item_title_delete_alarm">Klare alarm</string>
-    <string name="menu_item_title_delete_all">Delete all</string>
-    <string name="menu_item_title_favorites">Favorites</string>
+    <string name="menu_item_title_delete_all">Slet alle</string>
+    <string name="menu_item_title_favorites">Favoritter</string>
     <string name="menu_item_title_feedback">Feedback</string>
     <string name="menu_item_title_navigate">Navigate</string>
-    <string name="menu_item_title_refresh">Refresh</string>
-    <string name="menu_item_title_share_session">Share event</string>
-    <string name="menu_item_title_share_favorites">Share favorites</string>
-    <string name="menu_item_title_share_session_text">as text</string>
+    <string name="menu_item_title_refresh">Opdater</string>
+    <string name="menu_item_title_share_session">Del begivenhed</string>
+    <string name="menu_item_title_share_favorites">Del favoritter</string>
+    <string name="menu_item_title_share_session_text">som tekst</string>
     <string name="menu_item_title_share_session_json">as JSON (for Chaosflix)</string>
-    <string name="share_as_text">Share as text</string>
+    <string name="share_as_text">Del som tekst</string>
     <string name="share_as_json">Share as JSON (for Chaosflix)</string>
     <!-- AlertDialog -->
     <string name="OK">OK</string>
@@ -27,26 +27,26 @@
     <string name="certificate_error_message">        Failed to establish secure connection.\n
         (<xliff:g example="Unknown Error" id="error">%s</xliff:g>)
     </string>
-    <string name="certificate_error_title">Certificate could not be added.</string>
+    <string name="certificate_error_title">Certifikat kunne ikke tilføjes.</string>
     <!-- Error messages -->
-    <string name="dlg_err_connection_failed">Connection failure</string>
+    <string name="dlg_err_connection_failed">Forbindelsesfejl</string>
     <string name="dlg_err_failed_unknown_host">Unknown address:\n<xliff:g example="http://example.com" id="url">%s</xliff:g></string>
     <string name="dlg_err_failed_wrong_http_credentials">Invalid HTTP Authentication</string>
-    <string name="dlg_err_failed_timeout">Server doesn\'t respond (Timeout).</string>
-    <string name="dlg_err_failed_connect_failure">Unknown connection failure</string>
-    <string name="dlg_err_failed_not_found">Invalid schedule URL</string>
+    <string name="dlg_err_failed_timeout">Serveren svarer ikke (Timeout).</string>
+    <string name="dlg_err_failed_connect_failure">Ukendt forbindelsesfejl</string>
+    <string name="dlg_err_failed_not_found">Ugyldig tidsplan URL</string>
     <string name="dlg_err_failed_parse_failure">Couldn\'t parse response</string>
-    <string name="dlg_err_failed_ssl_failure">SSL failure</string>
-    <string name="dlg_err_failed_http_cleartext_not_permitted">HTTP is not allowed. Please use HTTPS.</string>
-    <string name="dlg_err_schedule_data">Schedule data error</string>
+    <string name="dlg_err_failed_ssl_failure">SSL-fejl</string>
+    <string name="dlg_err_failed_http_cleartext_not_permitted">HTTP er ikke tilladt. Brug venligst HTTPS.</string>
+    <string name="dlg_err_schedule_data">Fejl i tidsplanens data</string>
     <string name="dlg_err_schedule_data_empty">        Nothing to display. The schedule with version \"<xliff:g example="0.99" id="version">%s</xliff:g>\"
         does not contain any session.
     </string>
-    <string name="dlg_err_schedule_data_empty_without_version">        Nothing to display. The schedule does not contain any session.
+    <string name="dlg_err_schedule_data_empty_without_version">        Intet at vise. Tidsplanen indeholder ikke nogen session.
     </string>
-    <string name="uptodate">Schedule is up to date.</string>
+    <string name="uptodate">Tidsplan er opdateret.</string>
     <!-- Schedule changes dialog -->
-    <string name="schedule_changes_dialog_title">Schedule update</string>
+    <string name="schedule_changes_dialog_title">Tidsplan opdatering</string>
     <string name="schedule_changes_dialog_updated_to_text">The schedule has been updated to\u0020</string>
     <string name="schedule_changes_dialog_changed_new_cancelled_text">. There are changes in <xliff:g example="3 lectures" id="num_changes">%1$s</xliff:g>, <xliff:g example="2 are" id="num_new">%2$s</xliff:g> <xliff:g example="new" id="phrase_new">%3$s</xliff:g>, <xliff:g example="1 is" id="num_canceled">%4$s</xliff:g> <xliff:g example="cancelled" id="phrase_cancelled">%5$s</xliff:g>.</string>
     <string name="schedule_changes_dialog_affected_text">The changes affect <xliff:g example="2" id="num_marked">%1$d</xliff:g> of your favored lectures.</string>
