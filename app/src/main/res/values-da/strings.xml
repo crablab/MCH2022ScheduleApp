@@ -47,7 +47,7 @@
     <string name="uptodate">Tidsplan er opdateret.</string>
     <!-- Schedule changes dialog -->
     <string name="schedule_changes_dialog_title">Tidsplan opdatering</string>
-    <string name="schedule_changes_dialog_updated_to_text">The schedule has been updated to\u0020</string>
+    <string name="schedule_changes_dialog_updated_to_text">Tidsplanen er blevet opdateret til\u0020</string>
     <string name="schedule_changes_dialog_changed_new_cancelled_text">. There are changes in <xliff:g example="3 lectures" id="num_changes">%1$s</xliff:g>, <xliff:g example="2 are" id="num_new">%2$s</xliff:g> <xliff:g example="new" id="phrase_new">%3$s</xliff:g>, <xliff:g example="1 is" id="num_canceled">%4$s</xliff:g> <xliff:g example="cancelled" id="phrase_cancelled">%5$s</xliff:g>.</string>
     <string name="schedule_changes_dialog_affected_text">The changes affect <xliff:g example="2" id="num_marked">%1$d</xliff:g> of your favored lectures.</string>
     <plurals name="schedule_changes_dialog_phrase_new">
@@ -66,14 +66,14 @@
         <item quantity="one"><xliff:g example="1" id="count">%d</xliff:g> is</item>
         <item quantity="other"><xliff:g example="9" id="count">%d</xliff:g> are</item>
     </plurals>
-    <string name="schedule_changes_dialog_browse">Browse</string>
-    <string name="schedule_changes_dialog_later">Later</string>
-    <string name="progress_loading_data">Get schedule &#8230;</string>
+    <string name="schedule_changes_dialog_browse">Gennemse</string>
+    <string name="schedule_changes_dialog_later">Senere</string>
+    <string name="progress_loading_data">Få tidsplan &#8230;</string>
     <string name="progress_processing_data">Processing schedule &#8230;</string>
-    <string name="load_data">Load</string>
-    <string name="choose_day">Choose day</string>
-    <string name="day">Day</string>
-    <string name="fahrplan">Schedule</string>
+    <string name="load_data">Indlæs</string>
+    <string name="choose_day">Vælg dag</string>
+    <string name="day">Dag</string>
+    <string name="fahrplan">Tidsplan</string>
     <string name="appVersion">App Version <xliff:g example="1.40.2" id="appVersion">%s</xliff:g></string>
     <string name="schedule_updated_to">        Updated to <xliff:g example="Mildenberg 2018-01-16 16:50" id="version">%s</xliff:g>
     </string>
@@ -110,7 +110,7 @@
     <string name="invalid_url">Invalid URL</string>
     <string name="choose_to_delete">Select lectures</string>
     <string name="day_separator">Day <xliff:g example="2" id="day_of_congress">%1$d</xliff:g> - <xliff:g example="29.12.2014" id="date_of_congress_day">%2$s</xliff:g></string>
-    <string name="dlg_delete_all_favorites">Delete all favorites?</string>
+    <string name="dlg_delete_all_favorites">Slet alle favoritter?</string>
     <string name="dlg_delete_all_favorites_delete_all">Delete all</string>
     <string name="share_error_activity_not_found">No fitting app installed.</string>
     <!-- Build information -->
