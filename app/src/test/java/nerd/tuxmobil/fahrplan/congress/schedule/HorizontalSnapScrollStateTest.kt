@@ -55,6 +55,34 @@ class HorizontalSnapScrollStateTest {
         assertThat(createState().copy(roomsCount = 23).isRoomsCountInitialized()).isTrue()
     }
 
+    @Test
+    fun `calculateScrollToXPosition returns columnIndex x columnWidth`() {
+        with(createState().copy(columnWidth = 993)) {
+            assertThat(calculateScrollToXPosition(measuredWidth = 53622, columnIndex = 1)).isEqualTo(993)
+        }
+    }
+
+    @Test
+    fun `calculateScrollToXPosition returns 0 if columnWidth = 0`() {
+        with(createState().copy(columnWidth = 0)) {
+            assertThat(calculateScrollToXPosition(measuredWidth = 53622, columnIndex = 0)).isEqualTo(0)
+        }
+    }
+
+    @Test
+    fun `calculateScrollToXPosition returns the minColumnIndex if columnIndex = -1`() {
+        with(createState().copy(columnWidth = 993)) {
+            assertThat(calculateScrollToXPosition(measuredWidth = 53622, columnIndex = -1)).isEqualTo(0)
+        }
+    }
+
+    @Test
+    fun `calculateScrollToXPosition returns the maxColumnIndex x columnWidth if columnIndex exceeds maxColumnIndex`() {
+        with(createState().copy(columnWidth = 993)) {
+            assertThat(calculateScrollToXPosition(measuredWidth = 53622, columnIndex = 54)).isEqualTo(52629)
+        }
+    }
+
     private fun createState() = HorizontalSnapScrollState(
         logging = NoLogging
     )
