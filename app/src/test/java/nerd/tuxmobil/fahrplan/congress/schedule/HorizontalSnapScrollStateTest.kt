@@ -1,6 +1,7 @@
 package nerd.tuxmobil.fahrplan.congress.schedule
 
 import com.google.common.truth.Truth.assertThat
+import nerd.tuxmobil.fahrplan.congress.NoLogging
 import org.junit.Test
 
 class HorizontalSnapScrollStateTest {
@@ -25,7 +26,7 @@ class HorizontalSnapScrollStateTest {
     @Test
     fun `xStart is constraint to positive values`() {
         try {
-            HorizontalSnapScrollState(xStart = -1)
+            HorizontalSnapScrollState(NoLogging, xStart = -1)
         } catch (e: IllegalStateException) {
             assertThat(e.message).isEqualTo("xStart cannot be less then 0 but is -1.")
         }
@@ -34,7 +35,7 @@ class HorizontalSnapScrollStateTest {
     @Test
     fun `displayColumnCount is constraint to values greater than 0`() {
         try {
-            HorizontalSnapScrollState(displayColumnCount = 0)
+            HorizontalSnapScrollState(NoLogging, displayColumnCount = 0)
         } catch (e: IllegalStateException) {
             assertThat(e.message).isEqualTo("displayColumnCount cannot be 0.")
         }
@@ -43,7 +44,7 @@ class HorizontalSnapScrollStateTest {
     @Test
     fun `columnWidth is constraint to values greater than 0`() {
         try {
-            HorizontalSnapScrollState(columnWidth = -1)
+            HorizontalSnapScrollState(NoLogging, columnWidth = -1)
         } catch (e: IllegalStateException) {
             assertThat(e.message).isEqualTo("columnWidth cannot be less then 0 but is -1.")
         }
@@ -54,6 +55,8 @@ class HorizontalSnapScrollStateTest {
         assertThat(createState().copy(roomsCount = 23).isRoomsCountInitialized()).isTrue()
     }
 
-    private fun createState() = HorizontalSnapScrollState()
+    private fun createState() = HorizontalSnapScrollState(
+        logging = NoLogging
+    )
 
 }
