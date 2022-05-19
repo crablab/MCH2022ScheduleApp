@@ -53,7 +53,7 @@
     <string name="preference_summary_alarm_tone">Ouvrez les options choix de son d\'ici.</string>
     <!-- Device time zone -->
     <string name="preference_title_use_device_time_zone_enabled">Utiliser fuseau horaire du système</string>
-    <string name="preference_summary_use_device_time_zone_enabled">Displays dates and times accordingly.</string>
+    <string name="preference_summary_use_device_time_zone_enabled">Affiche date et horaire du système.</string>
     <!-- Alternative highlighting -->
     <string name="preference_title_alternative_highlighting_enabled">Enable alternative highlighting</string>
     <string name="preference_summary_alternative_highlighting_enabled">Adds a border around favored sessions.</string>
